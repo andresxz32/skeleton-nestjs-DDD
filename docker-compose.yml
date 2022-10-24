@@ -18,8 +18,6 @@ services:
             - .:/usr/src/app
             - /usr/src/app/node_modules
         restart: unless-stopped
-        depends_on:
-            - mongodb
     prod:
         container_name: trobbit_api_prod
         image: trobbit-api-prod:1.0.0
