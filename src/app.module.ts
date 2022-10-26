@@ -14,18 +14,18 @@ const envFilePath: string = getEnvPath(`${__dirname}/Shared/Envs`);
 @Module({
   imports: [
     ConfigModule.forRoot({ envFilePath, isGlobal: true }),
-    MongooseModule.forRootAsync({
-      imports: [DatabaseModule],
-      useFactory: (database: DatabaseConnection) => {
-        return <MongooseModuleOptions>{
-          uri: database.get(),
-          useNewUrlParser: true,
-          useUnifiedTopology: true,
-          ignoreUndefined: true,
-        };
-      },
-      inject: [DatabaseConnection],
-    }),
+    // MongooseModule.forRootAsync({
+    //   imports: [DatabaseModule],
+    //   useFactory: (database: DatabaseConnection) => {
+    //     return <MongooseModuleOptions>{
+    //       uri: database.get(),
+    //       useNewUrlParser: true,
+    //       useUnifiedTopology: true,
+    //       ignoreUndefined: true,
+    //     };
+    //   },
+    //   inject: [DatabaseConnection],
+    // }),
     PersistenceModule,
     ApiModule,
     DomainModule,
