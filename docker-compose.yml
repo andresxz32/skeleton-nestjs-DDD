@@ -2,8 +2,8 @@ version: '3.8'
 
 services:
     dev:
-        container_name: trobbit_api_dev
-        image: trobbit-api-dev:1.0.0
+        container_name: api_dev
+        image: api-dev:1.0.0
         build:
             context: .
             target: development
@@ -17,8 +17,8 @@ services:
             - /usr/src/app/node_modules
         restart: unless-stopped
     prod:
-        container_name: trobbit_api_prod
-        image: trobbit-api-prod:1.0.0
+        container_name: api_prod
+        image: api-prod:1.0.0
         build:
             context: .
             target: production
