@@ -12,32 +12,32 @@ Skeleton for create app in Nestjs framework with DDD and hexagonal architecture.
 
 #### Configure environments
 
-```http
+```bash
    For ease of use we recommend using the Api CLI: https://github.com/andresxz32/Thapi-CLI
 ```
-```http
+```bash
   Go to src/Shared/Envs
 ```
-```http
+```bash
   Set DB_CONNECTION for connect to Mongodb
 ```
 
 
 #### For execution in development
 
-```http
+```bash
   docker-compose up dev
 ```
 
 #### For execution in Production
 
-```http
+```bash
   docker-compose up prod
 ```
 
 #### For execution without logs
 
-```http
+```bash
   docker-compose up -d (prod/dev)
 
 ```
