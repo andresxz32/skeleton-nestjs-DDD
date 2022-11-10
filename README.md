@@ -50,7 +50,7 @@ Skeleton for create app in Nestjs framework with DDD and hexagonal architecture.
 
 This project is used by the following companies:
 
-- Trobbit Inc
+- Trobbit Inc.
 
 
 
