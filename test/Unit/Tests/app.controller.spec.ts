@@ -1,7 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-
+import { AppController } from 'src/app.controller';
+import { AppService } from 'src/app.service'
 describe('AppController', () => {
   let appController: AppController;
 
@@ -14,9 +13,9 @@ describe('AppController', () => {
     appController = app.get<AppController>(AppController);
   });
 
-  describe('root', () => {
+  describe('Check status of api', () => {
     it('should return "Ok"', () => {
-      expect(appController.check()).toBe('Hello World!');
+      expect(appController.check()).toBe('Ok');
     });
   });
 });
